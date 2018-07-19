@@ -1,0 +1,9 @@
+groups:
+- name: example
+  rules:
+  - alert: HighHelloRate
+    expr: hello_count_total > 5
+    labels:
+      severity: page
+    annotations:
+      summary: High hello rate
